@@ -1,10 +1,18 @@
 import { View, Text, StyleSheet, Button } from 'react-native'
 import React from 'react'
+import { useNavigation } from '@react-navigation/native'
+import { ComponentsScreenNavigation } from './types'
 
 const Components = () => {
+  const navigation = useNavigation<ComponentsScreenNavigation>()
   return (
     <View style={[styles.container]}>
-      <Button title='Example' />
+      <Button
+        title='Circular Progress Bar'
+        onPress={() => {
+          navigation.navigate('CircularProgressBar')
+        }}
+      />
     </View>
   )
 }
