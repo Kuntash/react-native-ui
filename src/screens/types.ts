@@ -6,3 +6,4 @@ export type ComponentsScreenProps = NativeStackScreenProps<
 >
 
 export type ComponentsScreenNavigation = ComponentsScreenProps['navigation']
+

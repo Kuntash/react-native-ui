@@ -19,6 +19,12 @@ const Components = () => {
           navigation.navigate('LayoutAnimation')
         }}
       />
+      <Button
+        title='Animated Bottom Tab'
+        onPress={() => {
+          navigation.navigate('AnimatedBottomTab')
+        }}
+      />
     </View>
   )
 }
