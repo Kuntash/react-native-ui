@@ -11,6 +11,7 @@ import Animated, {
   useAnimatedProps,
   useDerivedValue,
   useSharedValue,
+  withSpring,
   withTiming
 } from 'react-native-reanimated'
 import { ReText } from 'react-native-redash'
