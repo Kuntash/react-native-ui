@@ -13,6 +13,12 @@ const Components = () => {
           navigation.navigate('CircularProgressBar')
         }}
       />
+      <Button
+        title='Layout Animation'
+        onPress={() => {
+          navigation.navigate('LayoutAnimation')
+        }}
+      />
     </View>
   )
 }

@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { RootStackParamList } from './types'
 import Components from '../screens/Components'
 import CircularProgressBar from '../screens/CircularProgressBar'
+import LayoutAnimation from '../screens/LayoutAnimation'
 const Stack = createNativeStackNavigator<RootStackParamList>()
 const Routes = () => {
   const options = { headerShown: false }
@@ -13,6 +14,11 @@ const Routes = () => {
       <Stack.Screen
         name='CircularProgressBar'
         component={CircularProgressBar}
+        options={options}
+      />
+      <Stack.Screen
+        name='LayoutAnimation'
+        component={LayoutAnimation}
         options={options}
       />
     </Stack.Navigator>
