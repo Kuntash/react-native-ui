@@ -3,5 +3,5 @@ export type RootStackParamList = {
   CircularProgressBar: undefined
   LayoutAnimation: undefined
   AnimatedBottomTab: undefined
+  BottomSheetScreen: undefined
 }
-

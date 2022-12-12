@@ -6,6 +6,7 @@ import Components from '../screens/Components'
 import CircularProgressBar from '../screens/CircularProgressBar'
 import LayoutAnimation from '../screens/LayoutAnimation'
 import AnimatedBottomTab from '../screens/AnimatedBottomTab'
+import BottomSheetScreen from '../screens/BottomSheetScreen'
 const Stack = createNativeStackNavigator<RootStackParamList>()
 const Routes = () => {
   const options = { headerShown: false }
@@ -25,6 +26,11 @@ const Routes = () => {
       <Stack.Screen
         name='AnimatedBottomTab'
         component={AnimatedBottomTab}
+        options={options}
+      />
+      <Stack.Screen
+        name='BottomSheetScreen'
+        component={BottomSheetScreen}
         options={options}
       />
     </Stack.Navigator>

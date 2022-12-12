@@ -25,6 +25,12 @@ const Components = () => {
           navigation.navigate('AnimatedBottomTab')
         }}
       />
+      <Button
+        title='Bottom Sheet'
+        onPress={() => {
+          navigation.navigate('BottomSheetScreen')
+        }}
+      />
     </View>
   )
 }
