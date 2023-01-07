@@ -2,35 +2,21 @@ import { View, Text, StyleSheet, Button } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { ComponentsScreenNavigation } from './types'
+import { ROUTES } from '../constants/routes'
 
 const Components = () => {
   const navigation = useNavigation<ComponentsScreenNavigation>()
   return (
     <View style={[styles.container]}>
-      <Button
-        title='Circular Progress Bar'
-        onPress={() => {
-          navigation.navigate('CircularProgressBar')
-        }}
-      />
-      <Button
-        title='Layout Animation'
-        onPress={() => {
-          navigation.navigate('LayoutAnimation')
-        }}
-      />
-      <Button
-        title='Animated Bottom Tab'
-        onPress={() => {
-          navigation.navigate('AnimatedBottomTab')
-        }}
-      />
-      <Button
-        title='Bottom Sheet'
-        onPress={() => {
-          navigation.navigate('BottomSheetScreen')
-        }}
-      />
+      {ROUTES.map((route, index) => (
+        <Button
+          key={route._id}
+          title={route.title}
+          onPress={() => {
+            navigation.navigate(route.name)
+          }}
+        />
+      ))}
     </View>
   )
 }
